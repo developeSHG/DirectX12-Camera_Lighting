@@ -12,6 +12,7 @@ public:
 	void LateUpdate();
 	void FinalUpdate();
 
+	void Render();
 	void AddGameObject(shared_ptr<GameObject> gameObject);
 	void RemoveGameObject(shared_ptr<GameObject> gameObject);
 

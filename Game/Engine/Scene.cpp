@@ -42,6 +42,18 @@ void Scene::FinalUpdate()
 	}
 }
 
+void Scene::Render()
+{
+	PushLightData();
+
+	for (auto& gameObject : _gameObjects)
+	{
+		if (gameObject->GetCamera() == nullptr)
+			continue;
+
+		gameObject->GetCamera()->Render();
+	}
+}
 void Scene::AddGameObject(shared_ptr<GameObject> gameObject)
 {
 	_gameObjects.push_back(gameObject);
