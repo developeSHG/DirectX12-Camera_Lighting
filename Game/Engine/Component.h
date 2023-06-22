@@ -1,9 +1,12 @@
 #pragma once
+#include "Object.h"
 
 enum class COMPONENT_TYPE : uint8
 {
 	TRANSFORM,
 	MESH_RENDERER,
+	CAMERA,
+	LIGHT,
 	// ...
 	MONO_BEHAVIOUR,
 	END,
@@ -17,7 +20,7 @@ enum
 class GameObject;
 class Transform;
 
-class Component
+class Component : public Object
 {
 public:
 	Component(COMPONENT_TYPE type);
@@ -28,6 +31,7 @@ public:
 	virtual void Start() { }
 	virtual void Update() { }
 	virtual void LateUpdate() { }
+	virtual void FinalUpdate() { }
 
 public:
 	COMPONENT_TYPE GetType() { return _type; }
