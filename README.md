@@ -17,6 +17,7 @@
 
 <br><h3>Chapter 03. Lighting</h3>
 <img width="90%" src="https://user-images.githubusercontent.com/79896868/254762331-874e3223-2f02-4533-b19a-f70fa515570c.png"/>
+![ezgif com-video-to-gif](https://github.com/developeSHG/DirectX12-Camera_Lighting/assets/79896868/d7f9c0e5-0c8a-464d-a554-d6150ca18f7b)
 <b>Blog</b> : https://song-ift.tistory.com/419
 <br><b>History</b> : https://github.com/developeSHG/DirectX12-Camera_Lighting/commits/03.Lighting
 
